@@ -21,7 +21,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{
             __html: `
               try {
-                if (!sessionStorage.getItem('jercol_intro_seen')) {
+                if (!sessionStorage.getItem('jercol_intro_seen') && !window.location.hash) {
                   document.documentElement.classList.add('showing-intro');
                 }
               } catch (e) {}

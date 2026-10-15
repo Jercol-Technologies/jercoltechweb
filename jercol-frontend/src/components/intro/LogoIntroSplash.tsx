@@ -8,9 +8,10 @@ export function LogoIntroSplash() {
   const [isExiting, setIsExiting] = useState(false);
 
   useEffect(() => {
-    // If already seen, dismiss immediately
+    // If already seen or arriving via direct section anchor (campaign link), dismiss immediately
     const hasSeenIntro = sessionStorage.getItem('jercol_intro_seen');
-    if (hasSeenIntro) {
+    const hasHash = typeof window !== 'undefined' && Boolean(window.location.hash);
+    if (hasSeenIntro || hasHash) {
       document.documentElement.classList.remove('showing-intro');
       setShouldShow(false);
     }

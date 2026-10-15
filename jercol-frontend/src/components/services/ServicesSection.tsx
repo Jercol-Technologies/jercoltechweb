@@ -46,7 +46,7 @@ export function ServicesSection() {
   ];
 
   return (
-    <section id="servicios" className="py-20 px-6 max-w-6xl mx-auto border-t border-white/[0.06]">
+    <section id="servicios" className="scroll-mt-24 py-20 px-6 max-w-6xl mx-auto border-t border-white/[0.06]">
       <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-14">
         {/* Angular Badge */}
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/[0.03] border border-white/[0.08] text-sky-400 font-mono text-[11px] uppercase tracking-wider mb-3 rounded-none">

@@ -4,7 +4,7 @@ import { ShieldAlert, TrendingUp, Zap, Clock, ArrowRight, Activity, Users } from
 
 export function BusinessAnalyticsSection() {
   return (
-    <section id="analitica" className="py-20 px-6 max-w-6xl mx-auto border-t border-white/[0.06]">
+    <section id="analitica" className="scroll-mt-24 py-20 px-6 max-w-6xl mx-auto border-t border-white/[0.06]">
       {/* Section Header */}
       <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-14">
         {/* Angular Badge */}

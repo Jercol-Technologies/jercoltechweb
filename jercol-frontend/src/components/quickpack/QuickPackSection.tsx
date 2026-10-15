@@ -32,7 +32,7 @@ export function QuickPackSection() {
   ];
 
   return (
-    <section id="pack-72h" className="py-20 px-6 max-w-6xl mx-auto border-t border-white/[0.06]">
+    <section id="pack-72h" className="scroll-mt-24 py-20 px-6 max-w-6xl mx-auto border-t border-white/[0.06]">
       <div className="relative rounded-none bg-gradient-to-b from-slate-950 via-slate-900/70 to-slate-950 border border-blue-500/25 p-7 sm:p-10 overflow-hidden shadow-2xl">
         {/* Glow accent */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
