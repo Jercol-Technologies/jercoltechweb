@@ -58,6 +58,7 @@ desktop.ini
 *.mkv
 *.mp3
 *.wav
+!jercol-frontend/public/JT_logo_intro.mp4
 
 # Unused/Scratch images & design mockups
 jercol-frontend/public/imagenes/*.jpg
