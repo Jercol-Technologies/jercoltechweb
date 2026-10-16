@@ -25,9 +25,9 @@ export function MarqueeSection() {
     },
     {
       name: 'Remates Catire Bello',
-      src: '/logos/logo_remate_CB.png',
-      width: 504,
-      height: 495,
+      src: '/logos/logo_remate_CB_horizontal.png',
+      width: 542,
+      height: 144,
     },
     {
       name: 'Súper Rifas Diarias',
@@ -37,9 +37,9 @@ export function MarqueeSection() {
     },
     {
       name: 'La Comunidad Tesista de Latinoamérica',
-      src: '/logos/la_comunidad_tesista_de_latinoamerica.png',
-      width: 2126,
-      height: 1716,
+      src: '/logos/la_comunidad_tesista_horizontal.png',
+      width: 600,
+      height: 144,
     },
     {
       name: 'Gaispro Index',
