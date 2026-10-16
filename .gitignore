@@ -67,3 +67,6 @@ jercol-frontend/public/imagenes/Logotipo tecnológico Jercol Technologies.png
 jercol-frontend/public/imagenes/nuevo_isotipo_solobarras_jt.png
 jercol-frontend/public/imagenes/iso_tipo_cropped.png
 jercol-frontend/public/imagenes/iso_tipo_nuevo_jt.png
+
+# Production client logos (tracked)
+!jercol-frontend/public/logos/**
