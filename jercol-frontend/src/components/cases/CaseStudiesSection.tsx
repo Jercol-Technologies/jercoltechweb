@@ -1,6 +1,6 @@
 'use client';
 
-import { Layers, Database, Smartphone, Activity } from 'lucide-react';
+import { Layers, Database, Smartphone, Activity, ExternalLink, Lock } from 'lucide-react';
 
 export function CaseStudiesSection() {
   const projects = [
@@ -15,18 +15,22 @@ export function CaseStudiesSection() {
         'Indexación orgánica masiva en Google',
         'Embudos de captación directa para admisiones',
       ],
+      url: 'https://www.directorioposgradoseducacion.com',
+      urlLabel: 'directorioposgradoseducacion.com',
     },
     {
       icon: Database,
       category: 'SOFTWARE COMO SERVICIO (SAAS)',
       title: 'Plataforma SaaS B2B en Operación Comercial Activa',
       description:
-        'Software como servicio operativo en el mercado local bajo modelo de licencias y cobro recurrente. Demuestra nuestra capacidad no solo de programar, sino de mantener infraestructura crítica en producción con clientes de pago diario.',
+        'Software como servicio operativo en el mercado bajo modelo de licencias y cobro recurrente. Demuestra nuestra capacidad para desplegar y mantener infraestructura crítica en producción con clientes de pago diario.',
       highlights: [
         'Modelo de licenciamiento activo',
         'Alta disponibilidad y estabilidad en producción',
         'Gestión de cobros y accesos multiusuario',
       ],
+      url: 'https://remates-catire-bello.vercel.app',
+      urlLabel: 'remates-catire-bello.vercel.app',
     },
     {
       icon: Smartphone,
@@ -39,6 +43,7 @@ export function CaseStudiesSection() {
         'Cero prospectos perdidos en noches o fines de semana',
         'Filtrado inteligente antes de transferir a un asesor',
       ],
+      ndaNote: 'Software Privado B2B · Bajo Acuerdo de Confidencialidad (NDA)',
     },
     {
       icon: Activity,
@@ -51,6 +56,7 @@ export function CaseStudiesSection() {
         'Análisis predictivo de patrones complejos',
         'Toma de decisiones fundamentada en evidencia de datos',
       ],
+      ndaNote: 'Algoritmo Propietario · Licencia Privada (NDA)',
     },
   ];
 
@@ -95,7 +101,7 @@ export function CaseStudiesSection() {
                   {proj.description}
                 </p>
 
-                <div className="space-y-1.5 mb-2">
+                <div className="space-y-1.5 mb-5">
                   {proj.highlights.map((point, pIdx) => (
                     <div key={pIdx} className="flex items-center gap-2 text-xs text-slate-300 font-mono">
                       <span className="w-1.5 h-1.5 rounded-none bg-sky-400" />
@@ -103,6 +109,26 @@ export function CaseStudiesSection() {
                     </div>
                   ))}
                 </div>
+              </div>
+
+              {/* Footer row: Live URL link or NDA Badge */}
+              <div className="pt-4 border-t border-white/[0.06]">
+                {proj.url ? (
+                  <a
+                    href={proj.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs font-mono text-sky-400 hover:text-sky-300 transition-colors group"
+                  >
+                    <span>{proj.urlLabel}</span>
+                    <ExternalLink className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </a>
+                ) : (
+                  <div className="flex items-center gap-1.5 text-[11px] font-mono text-slate-500">
+                    <Lock className="w-3 h-3 text-slate-400 shrink-0" />
+                    <span>{proj.ndaNote}</span>
+                  </div>
+                )}
               </div>
             </div>
           );
